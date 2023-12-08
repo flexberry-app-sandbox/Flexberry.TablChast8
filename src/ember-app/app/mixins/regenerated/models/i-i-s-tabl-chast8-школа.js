@@ -6,6 +6,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   назв: DS.attr('string'),
+  учитель: DS.hasMany('i-i-s-tabl-chast8-учитель', { inverse: 'школа', async: false }),
   ученик: DS.hasMany('i-i-s-tabl-chast8-ученик', { inverse: 'школа', async: false })
 });
 
@@ -14,6 +15,13 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-tabl-chast8-школа.validations.назв.__caption__',
     validators: [
       validator('ds-error'),
+    ],
+  },
+  учитель: {
+    descriptionKey: 'models.i-i-s-tabl-chast8-школа.validations.учитель.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
     ],
   },
   ученик: {
@@ -39,6 +47,9 @@ export let defineProjections = function (modelClass) {
       родитель: belongsTo('i-i-s-tabl-chast8-родитель', 'Родитель', {
         фио: attr('Фио', { index: 6, hidden: true })
       }, { index: 5, displayMemberPath: 'фио' })
+    }),
+    учитель: hasMany('i-i-s-tabl-chast8-учитель', 'Учитель', {
+      фио: attr('Фио', { index: 0 })
     })
   });
 

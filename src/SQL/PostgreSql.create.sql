@@ -3,6 +3,13 @@
 
 
 
+CREATE TABLE Учитель (
+ primaryKey UUID NOT NULL,
+ Фио VARCHAR(255) NULL,
+ Школа UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE КлассУч (
  primaryKey UUID NOT NULL,
  Назв VARCHAR(255) NULL,
@@ -140,6 +147,9 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE Учитель ADD CONSTRAINT FKdc72048c1bdf30c1830477780f355a496fa28392 FOREIGN KEY (Школа) REFERENCES Школа; 
+CREATE INDEX Indexdc72048c1bdf30c1830477780f355a496fa28392 on Учитель (Школа); 
 
  ALTER TABLE Ученик ADD CONSTRAINT FK077e2d94ed5f3d6e425c1e82e1abc85466e62e98 FOREIGN KEY (СтатусУч) REFERENCES СтатусУч; 
 CREATE INDEX Index077e2d94ed5f3d6e425c1e82e1abc85466e62e98 on Ученик (СтатусУч); 

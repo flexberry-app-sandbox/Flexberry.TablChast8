@@ -19,6 +19,11 @@
   "belongsTo": [],
   "hasMany": [
     {
+      "name": "учитель",
+      "relatedTo": "i-i-s-tabl-chast8-учитель",
+      "inverse": "школа"
+    },
+    {
       "name": "ученик",
       "relatedTo": "i-i-s-tabl-chast8-ученик",
       "inverse": "школа"
@@ -43,6 +48,13 @@
           "caption": "Ученик",
           "name": "ученик",
           "relatedTo": "i-i-s-tabl-chast8-ученик",
+          "inverse": null
+        },
+        {
+          "projectionName": "УчительE",
+          "caption": "Учитель",
+          "name": "учитель",
+          "relatedTo": "i-i-s-tabl-chast8-учитель",
           "inverse": null
         }
       ]

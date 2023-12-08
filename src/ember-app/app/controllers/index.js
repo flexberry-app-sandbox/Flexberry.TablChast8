@@ -22,25 +22,25 @@ export default Controller.extend({
             link: 'i-i-s-tabl-chast8-класс-уч-l',
             caption: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-класс-уч-l.caption'),
             title: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-класс-уч-l.title'),
-            icon: 'chart line',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-tabl-chast8-школа-l',
             caption: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-школа-l.caption'),
             title: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-школа-l.title'),
-            icon: 'folder open',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-tabl-chast8-статус-уч-l',
             caption: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-статус-уч-l.caption'),
             title: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-статус-уч-l.title'),
-            icon: 'chart line',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-tabl-chast8-родитель-l',
             caption: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-родитель-l.caption'),
             title: i18n.t('forms.application.sitemap.tabl-chast8.i-i-s-tabl-chast8-родитель-l.title'),
-            icon: 'list',
+            icon: 'table',
             children: null
           }]
         }

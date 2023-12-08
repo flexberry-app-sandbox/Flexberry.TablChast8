@@ -7,6 +7,7 @@ moduleForModel('i-i-s-tabl-chast8-ученик', 'Unit | Model | i-i-s-tabl-chas
     'model:i-i-s-tabl-chast8-родитель',
     'model:i-i-s-tabl-chast8-статус-уч',
     'model:i-i-s-tabl-chast8-ученик',
+    'model:i-i-s-tabl-chast8-учитель',
     'model:i-i-s-tabl-chast8-школа',
     'validator:ds-error',
     'validator:presence',

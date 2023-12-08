@@ -32,6 +32,8 @@ namespace IIS.Tabl_chast8
             "Назв as \'Назв\'"})]
     [AssociatedDetailViewAttribute("ШколаE", "Ученик", "УченикE", true, "", "Ученик", true, new string[] {
             ""})]
+    [AssociatedDetailViewAttribute("ШколаE", "Учитель", "УчительE", true, "", "Учитель", true, new string[] {
+            ""})]
     [View("ШколаL", new string[] {
             "Назв as \'Назв\'"})]
     public class Школа : ICSSoft.STORMNET.DataObject
@@ -40,6 +42,8 @@ namespace IIS.Tabl_chast8
         private string fНазв;
         
         private IIS.Tabl_chast8.DetailArrayOfУченик fУченик;
+        
+        private IIS.Tabl_chast8.DetailArrayOfУчитель fУчитель;
         
         // *** Start programmer edit section *** (Школа CustomMembers)
 
@@ -110,6 +114,41 @@ namespace IIS.Tabl_chast8
                 // *** Start programmer edit section *** (Школа.Ученик Set end)
 
                 // *** End programmer edit section *** (Школа.Ученик Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Школа.
+        /// </summary>
+        // *** Start programmer edit section *** (Школа.Учитель CustomAttributes)
+
+        // *** End programmer edit section *** (Школа.Учитель CustomAttributes)
+        public virtual IIS.Tabl_chast8.DetailArrayOfУчитель Учитель
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Школа.Учитель Get start)
+
+                // *** End programmer edit section *** (Школа.Учитель Get start)
+                if ((this.fУчитель == null))
+                {
+                    this.fУчитель = new IIS.Tabl_chast8.DetailArrayOfУчитель(this);
+                }
+                IIS.Tabl_chast8.DetailArrayOfУчитель result = this.fУчитель;
+                // *** Start programmer edit section *** (Школа.Учитель Get end)
+
+                // *** End programmer edit section *** (Школа.Учитель Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Школа.Учитель Set start)
+
+                // *** End programmer edit section *** (Школа.Учитель Set start)
+                this.fУчитель = value;
+                // *** Start programmer edit section *** (Школа.Учитель Set end)
+
+                // *** End programmer edit section *** (Школа.Учитель Set end)
             }
         }
         

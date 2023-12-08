@@ -2,6 +2,19 @@
 
 
 
+CREATE TABLE "Учитель"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
+
+	"Школа" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "КлассУч"
 (
 
@@ -262,6 +275,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "Учитель"
+	ADD CONSTRAINT "Учитель_FШкола_0" FOREIGN KEY ("Школа") REFERENCES "Школа" ("primaryKey");
+
+CREATE INDEX "Учитель_IШкола" on "Учитель" ("Школа");
 
 ALTER TABLE "Ученик"
 	ADD CONSTRAINT "Ученик_FСтату_8707" FOREIGN KEY ("СтатусУч") REFERENCES "СтатусУч" ("primaryKey");

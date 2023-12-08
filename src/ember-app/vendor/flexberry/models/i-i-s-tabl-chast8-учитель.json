@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISTabl_chast8Учитель",
+  "modelName": "i-i-s-tabl-chast8-учитель",
+  "className": "Учитель",
+  "nameSpace": "IIS.Tabl_chast8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "школа",
+      "relatedTo": "i-i-s-tabl-chast8-школа",
+      "inverse": "учитель"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УчительE",
+      "modelName": "i-i-s-tabl-chast8-учитель",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

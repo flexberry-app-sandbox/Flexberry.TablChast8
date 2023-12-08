@@ -2,6 +2,17 @@
 
 
 
+CREATE TABLE [Учитель] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Фио] VARCHAR(255)  NULL,
+
+	 [Школа] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [КлассУч] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

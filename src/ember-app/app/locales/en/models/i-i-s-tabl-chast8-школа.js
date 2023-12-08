@@ -27,6 +27,12 @@ export default {
             __caption__: 'Фио'
           }
         }
+      },
+      учитель: {
+        __caption__: 'Учитель',
+        фио: {
+          __caption__: 'Фио'
+        }
       }
     },
     ШколаL: {
@@ -38,6 +44,9 @@ export default {
   validations: {
     назв: {
       __caption__: 'Назв'
+    },
+    учитель: {
+      __caption__: 'Учитель'
     },
     ученик: {
       __caption__: 'Ученик'

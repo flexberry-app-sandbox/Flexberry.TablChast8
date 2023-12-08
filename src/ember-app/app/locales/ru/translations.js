@@ -13,6 +13,7 @@ import IISTabl_chast8КлассУчModel from './models/i-i-s-tabl-chast8-кла
 import IISTabl_chast8РодительModel from './models/i-i-s-tabl-chast8-родитель';
 import IISTabl_chast8СтатусУчModel from './models/i-i-s-tabl-chast8-статус-уч';
 import IISTabl_chast8УченикModel from './models/i-i-s-tabl-chast8-ученик';
+import IISTabl_chast8УчительModel from './models/i-i-s-tabl-chast8-учитель';
 import IISTabl_chast8ШколаModel from './models/i-i-s-tabl-chast8-школа';
 
 const translations = {};
@@ -24,6 +25,7 @@ $.extend(true, translations, {
     'i-i-s-tabl-chast8-родитель': IISTabl_chast8РодительModel,
     'i-i-s-tabl-chast8-статус-уч': IISTabl_chast8СтатусУчModel,
     'i-i-s-tabl-chast8-ученик': IISTabl_chast8УченикModel,
+    'i-i-s-tabl-chast8-учитель': IISTabl_chast8УчительModel,
     'i-i-s-tabl-chast8-школа': IISTabl_chast8ШколаModel
   },
 

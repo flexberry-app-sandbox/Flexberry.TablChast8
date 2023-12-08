@@ -48,4 +48,18 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "ученик" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-tabl-chast8-школа-e.учитель-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="учительGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.учитель
+      content=model.учитель
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "учитель" "isInvalid") "error")
+      data-test-i-i-s-tabl-chast8-школа-e-учитель=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "учитель" "message")}}
+  </div>
 </form>
