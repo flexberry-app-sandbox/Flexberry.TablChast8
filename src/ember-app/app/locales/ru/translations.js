@@ -96,6 +96,10 @@ $.extend(true, translations, {
           'i-i-s-tabl-chast8-школа-l': {
             caption: 'Школа',
             title: ''
+          },
+          'i-i-s-tabl-chast8-статус-уч-l': {
+            caption: 'СтатусУч',
+            title: ''
           }
         }
       }

@@ -21,6 +21,13 @@
           "caption": "Школа",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-tabl-chast8-статус-уч-l",
+          "menuName": null,
+          "caption": "СтатусУч",
+          "title": "",
+          "children": null
         }
       ]
     }
