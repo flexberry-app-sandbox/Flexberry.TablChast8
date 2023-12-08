@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabl-chast8-класс-уч-e",
+  "editForm": "i-i-s-tabl-chast8-класс-уч-e",
+  "external": false,
+  "caption": "Класс уч",
+  "name": "IISTabl_chast8КлассУчL",
+  "className": "КлассУчL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-класс-уч",
+      "modelProjection": "КлассУчL"
+    }
+  ]
+}

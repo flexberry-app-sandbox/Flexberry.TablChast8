@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISTabl_chast8КлассУч",
+  "modelName": "i-i-s-tabl-chast8-класс-уч",
+  "className": "КлассУч",
+  "nameSpace": "IIS.Tabl_chast8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "назв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлассУчE",
+      "modelName": "i-i-s-tabl-chast8-класс-уч",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Назв",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КлассУчL",
+      "modelName": "i-i-s-tabl-chast8-класс-уч",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Назв",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

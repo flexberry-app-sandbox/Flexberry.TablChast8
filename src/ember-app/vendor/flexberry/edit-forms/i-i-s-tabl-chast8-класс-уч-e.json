@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Класс уч",
+  "name": "IISTabl_chast8КлассУчE",
+  "className": "КлассУчE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-класс-уч",
+      "modelProjection": "КлассУчE"
+    }
+  ]
+}

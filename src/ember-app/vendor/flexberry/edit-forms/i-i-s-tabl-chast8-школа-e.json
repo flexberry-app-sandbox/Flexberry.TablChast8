@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "классУч",
+      "displayAttributeName": "назв",
+      "required": true,
+      "relationName": "Ученик.КлассУч",
+      "projection": "КлассУчL",
+      "detailModelName": "i-i-s-tabl-chast8-ученик"
+    }
+  ],
+  "external": false,
+  "caption": "Школа",
+  "name": "IISTabl_chast8ШколаE",
+  "className": "ШколаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-школа",
+      "modelProjection": "ШколаE"
+    }
+  ]
+}

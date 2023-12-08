@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISTabl_chast8Ученик",
+  "modelName": "i-i-s-tabl-chast8-ученик",
+  "className": "Ученик",
+  "nameSpace": "IIS.Tabl_chast8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "классУч",
+      "relatedTo": "i-i-s-tabl-chast8-класс-уч",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "школа",
+      "relatedTo": "i-i-s-tabl-chast8-школа",
+      "inverse": "ученик"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УченикE",
+      "modelName": "i-i-s-tabl-chast8-ученик",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Назв",
+          "lookupValueField": "назв",
+          "relationName": "КлассУч",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "назв",
+              "caption": "Назв",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Класс уч",
+          "name": "классУч",
+          "relatedTo": "i-i-s-tabl-chast8-класс-уч",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

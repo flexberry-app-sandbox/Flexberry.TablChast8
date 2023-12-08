@@ -1,0 +1,68 @@
+﻿{
+  "name": "IISTabl_chast8Школа",
+  "modelName": "i-i-s-tabl-chast8-школа",
+  "className": "Школа",
+  "nameSpace": "IIS.Tabl_chast8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "назв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "ученик",
+      "relatedTo": "i-i-s-tabl-chast8-ученик",
+      "inverse": "школа"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ШколаE",
+      "modelName": "i-i-s-tabl-chast8-школа",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Назв",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "УченикE",
+          "caption": "Ученик",
+          "name": "ученик",
+          "relatedTo": "i-i-s-tabl-chast8-ученик",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ШколаL",
+      "modelName": "i-i-s-tabl-chast8-школа",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Назв",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

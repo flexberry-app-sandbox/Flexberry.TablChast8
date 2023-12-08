@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Tabl_chast8",
+  "applicationTitle": "Tabl_chast8",
+  "items": [
+    {
+      "link": null,
+      "menuName": "tabl-chast8",
+      "caption": "Tabl_chast8",
+      "title": "Tabl_chast8",
+      "children": [
+        {
+          "link": "i-i-s-tabl-chast8-класс-уч-l",
+          "menuName": null,
+          "caption": "Класс уч",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-tabl-chast8-школа-l",
+          "menuName": null,
+          "caption": "Школа",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
