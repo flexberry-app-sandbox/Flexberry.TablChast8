@@ -33,16 +33,21 @@ namespace IIS.Tabl_chast8
             "КлассУч as \'Класс уч\'",
             "КлассУч.Назв as \'Назв\'",
             "СтатусУч as \'Статус уч\'",
-            "СтатусУч.Назв as \'Назв\'"}, Hidden=new string[] {
+            "СтатусУч.Назв as \'Назв\'",
+            "Родитель as \'Родитель\'",
+            "Родитель.Фио as \'Фио\'"}, Hidden=new string[] {
             "КлассУч.Назв"})]
     [MasterViewDefineAttribute("УченикE", "КлассУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Назв")]
     [MasterViewDefineAttribute("УченикE", "СтатусУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Назв")]
+    [MasterViewDefineAttribute("УченикE", "Родитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио")]
     public class Ученик : ICSSoft.STORMNET.DataObject
     {
         
         private string fФИО;
         
         private IIS.Tabl_chast8.СтатусУч fСтатусУч;
+        
+        private IIS.Tabl_chast8.Родитель fРодитель;
         
         private IIS.Tabl_chast8.КлассУч fКлассУч;
         
@@ -116,6 +121,40 @@ namespace IIS.Tabl_chast8
                 // *** Start programmer edit section *** (Ученик.КлассУч Set end)
 
                 // *** End programmer edit section *** (Ученик.КлассУч Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Ученик.
+        /// </summary>
+        // *** Start programmer edit section *** (Ученик.Родитель CustomAttributes)
+
+        // *** End programmer edit section *** (Ученик.Родитель CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Родитель"})]
+        [NotNull()]
+        public virtual IIS.Tabl_chast8.Родитель Родитель
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Ученик.Родитель Get start)
+
+                // *** End programmer edit section *** (Ученик.Родитель Get start)
+                IIS.Tabl_chast8.Родитель result = this.fРодитель;
+                // *** Start programmer edit section *** (Ученик.Родитель Get end)
+
+                // *** End programmer edit section *** (Ученик.Родитель Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Ученик.Родитель Set start)
+
+                // *** End programmer edit section *** (Ученик.Родитель Set start)
+                this.fРодитель = value;
+                // *** Start programmer edit section *** (Ученик.Родитель Set end)
+
+                // *** End programmer edit section *** (Ученик.Родитель Set end)
             }
         }
         

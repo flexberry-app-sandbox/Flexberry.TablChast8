@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "",
+  "name": "IISTabl_chast8РодительE",
+  "className": "РодительE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-родитель",
+      "modelProjection": "РодительE"
+    }
+  ]
+}

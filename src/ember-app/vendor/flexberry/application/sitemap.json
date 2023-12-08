@@ -28,6 +28,13 @@
           "caption": "СтатусУч",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-tabl-chast8-родитель-l",
+          "menuName": null,
+          "caption": "Родитель",
+          "title": "",
+          "children": null
         }
       ]
     }

@@ -11,6 +11,11 @@ Router.map(function () {
   { path: 'i-i-s-tabl-chast8-класс-уч-e/:id' });
   this.route('i-i-s-tabl-chast8-класс-уч-e.new',
   { path: 'i-i-s-tabl-chast8-класс-уч-e/new' });
+  this.route('i-i-s-tabl-chast8-родитель-l');
+  this.route('i-i-s-tabl-chast8-родитель-e',
+  { path: 'i-i-s-tabl-chast8-родитель-e/:id' });
+  this.route('i-i-s-tabl-chast8-родитель-e.new',
+  { path: 'i-i-s-tabl-chast8-родитель-e/new' });
   this.route('i-i-s-tabl-chast8-статус-уч-l');
   this.route('i-i-s-tabl-chast8-статус-уч-e',
   { path: 'i-i-s-tabl-chast8-статус-уч-e/:id' });

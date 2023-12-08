@@ -24,6 +24,17 @@ CREATE TABLE "СтатусУч"
 ) ;
 
 
+CREATE TABLE "Родитель"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Ученик"
 (
 
@@ -32,6 +43,8 @@ CREATE TABLE "Ученик"
 	"ФИО" NVARCHAR2(255) NULL,
 
 	"СтатусУч" RAW(16) NOT NULL,
+
+	"Родитель" RAW(16) NOT NULL,
 
 	"КлассУч" RAW(16) NOT NULL,
 
@@ -254,6 +267,11 @@ ALTER TABLE "Ученик"
 	ADD CONSTRAINT "Ученик_FСтату_8707" FOREIGN KEY ("СтатусУч") REFERENCES "СтатусУч" ("primaryKey");
 
 CREATE INDEX "Ученик_IСтатусУч" on "Ученик" ("СтатусУч");
+
+ALTER TABLE "Ученик"
+	ADD CONSTRAINT "Ученик_FРодит_7708" FOREIGN KEY ("Родитель") REFERENCES "Родитель" ("primaryKey");
+
+CREATE INDEX "Ученик_IРодитель" on "Ученик" ("Родитель");
 
 ALTER TABLE "Ученик"
 	ADD CONSTRAINT "Ученик_FКлассУч_0" FOREIGN KEY ("КлассУч") REFERENCES "КлассУч" ("primaryKey");

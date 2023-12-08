@@ -27,6 +27,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "родитель",
+      "relatedTo": "i-i-s-tabl-chast8-родитель",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "статусУч",
       "relatedTo": "i-i-s-tabl-chast8-статус-уч",
       "inverse": null
@@ -93,6 +100,27 @@
           "caption": "Статус уч",
           "name": "статусУч",
           "relatedTo": "i-i-s-tabl-chast8-статус-уч",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Фио",
+          "lookupValueField": "фио",
+          "relationName": "Родитель",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Родитель",
+          "name": "родитель",
+          "relatedTo": "i-i-s-tabl-chast8-родитель",
           "inverse": null
         }
       ],

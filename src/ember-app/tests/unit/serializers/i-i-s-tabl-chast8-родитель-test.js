@@ -1,9 +1,9 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-tabl-chast8-статус-уч', 'Unit | Serializer | i-i-s-tabl-chast8-статус-уч', {
+moduleForModel('i-i-s-tabl-chast8-родитель', 'Unit | Serializer | i-i-s-tabl-chast8-родитель', {
   // Specify the other units that are required for this test.
   needs: [
-    'serializer:i-i-s-tabl-chast8-статус-уч',
+    'serializer:i-i-s-tabl-chast8-родитель',
     'service:syncer',
     'transform:file',
     'transform:decimal',

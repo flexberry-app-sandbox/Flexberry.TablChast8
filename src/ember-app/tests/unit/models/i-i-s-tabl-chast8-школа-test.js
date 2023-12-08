@@ -4,6 +4,7 @@ moduleForModel('i-i-s-tabl-chast8-школа', 'Unit | Model | i-i-s-tabl-chast8
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-tabl-chast8-класс-уч',
+    'model:i-i-s-tabl-chast8-родитель',
     'model:i-i-s-tabl-chast8-статус-уч',
     'model:i-i-s-tabl-chast8-ученик',
     'model:i-i-s-tabl-chast8-школа',

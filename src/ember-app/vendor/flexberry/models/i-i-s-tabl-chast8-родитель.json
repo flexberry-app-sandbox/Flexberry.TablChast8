@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISTabl_chast8Родитель",
+  "modelName": "i-i-s-tabl-chast8-родитель",
+  "className": "Родитель",
+  "nameSpace": "IIS.Tabl_chast8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РодительE",
+      "modelName": "i-i-s-tabl-chast8-родитель",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РодительL",
+      "modelName": "i-i-s-tabl-chast8-родитель",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

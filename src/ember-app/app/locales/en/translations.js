@@ -2,12 +2,15 @@ import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
 
 import IISTabl_chast8КлассУчLForm from './forms/i-i-s-tabl-chast8-класс-уч-l';
+import IISTabl_chast8РодительLForm from './forms/i-i-s-tabl-chast8-родитель-l';
 import IISTabl_chast8СтатусУчLForm from './forms/i-i-s-tabl-chast8-статус-уч-l';
 import IISTabl_chast8ШколаLForm from './forms/i-i-s-tabl-chast8-школа-l';
 import IISTabl_chast8КлассУчEForm from './forms/i-i-s-tabl-chast8-класс-уч-e';
+import IISTabl_chast8РодительEForm from './forms/i-i-s-tabl-chast8-родитель-e';
 import IISTabl_chast8СтатусУчEForm from './forms/i-i-s-tabl-chast8-статус-уч-e';
 import IISTabl_chast8ШколаEForm from './forms/i-i-s-tabl-chast8-школа-e';
 import IISTabl_chast8КлассУчModel from './models/i-i-s-tabl-chast8-класс-уч';
+import IISTabl_chast8РодительModel from './models/i-i-s-tabl-chast8-родитель';
 import IISTabl_chast8СтатусУчModel from './models/i-i-s-tabl-chast8-статус-уч';
 import IISTabl_chast8УченикModel from './models/i-i-s-tabl-chast8-ученик';
 import IISTabl_chast8ШколаModel from './models/i-i-s-tabl-chast8-школа';
@@ -18,6 +21,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'i-i-s-tabl-chast8-класс-уч': IISTabl_chast8КлассУчModel,
+    'i-i-s-tabl-chast8-родитель': IISTabl_chast8РодительModel,
     'i-i-s-tabl-chast8-статус-уч': IISTabl_chast8СтатусУчModel,
     'i-i-s-tabl-chast8-ученик': IISTabl_chast8УченикModel,
     'i-i-s-tabl-chast8-школа': IISTabl_chast8ШколаModel
@@ -100,6 +104,10 @@ $.extend(true, translations, {
           'i-i-s-tabl-chast8-статус-уч-l': {
             caption: 'СтатусУч',
             title: ''
+          },
+          'i-i-s-tabl-chast8-родитель-l': {
+            caption: 'Родитель',
+            title: ''
           }
         }
       }
@@ -114,9 +122,11 @@ $.extend(true, translations, {
       'delete-error-message-caption': 'Delete operation failed'
     },
     'i-i-s-tabl-chast8-класс-уч-l': IISTabl_chast8КлассУчLForm,
+    'i-i-s-tabl-chast8-родитель-l': IISTabl_chast8РодительLForm,
     'i-i-s-tabl-chast8-статус-уч-l': IISTabl_chast8СтатусУчLForm,
     'i-i-s-tabl-chast8-школа-l': IISTabl_chast8ШколаLForm,
     'i-i-s-tabl-chast8-класс-уч-e': IISTabl_chast8КлассУчEForm,
+    'i-i-s-tabl-chast8-родитель-e': IISTabl_chast8РодительEForm,
     'i-i-s-tabl-chast8-статус-уч-e': IISTabl_chast8СтатусУчEForm,
     'i-i-s-tabl-chast8-школа-e': IISTabl_chast8ШколаEForm
   },

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabl-chast8-родитель-e",
+  "editForm": "i-i-s-tabl-chast8-родитель-e",
+  "external": false,
+  "caption": "",
+  "name": "IISTabl_chast8РодительL",
+  "className": "РодительL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-родитель",
+      "modelProjection": "РодительL"
+    }
+  ]
+}

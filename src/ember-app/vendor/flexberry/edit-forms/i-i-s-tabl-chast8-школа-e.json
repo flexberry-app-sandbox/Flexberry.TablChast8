@@ -15,6 +15,14 @@
       "relationName": "Ученик.СтатусУч",
       "projection": "СтатусУчL",
       "detailModelName": "i-i-s-tabl-chast8-ученик"
+    },
+    {
+      "master": "родитель",
+      "displayAttributeName": "фио",
+      "required": true,
+      "relationName": "Ученик.Родитель",
+      "projection": "РодительL",
+      "detailModelName": "i-i-s-tabl-chast8-ученик"
     }
   ],
   "external": false,
