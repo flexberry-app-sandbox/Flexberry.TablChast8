@@ -34,10 +34,10 @@ export let defineProjections = function (modelClass) {
         назв: attr('Назв', { index: 2, hidden: true })
       }, { index: 1, displayMemberPath: 'назв' }),
       статусУч: belongsTo('i-i-s-tabl-chast8-статус-уч', 'Статус уч', {
-        назв: attr('Назв', { index: 4 })
+        назв: attr('Назв', { index: 4, hidden: true })
       }, { index: 3, displayMemberPath: 'назв' }),
       родитель: belongsTo('i-i-s-tabl-chast8-родитель', 'Родитель', {
-        фио: attr('Фио', { index: 6 })
+        фио: attr('Фио', { index: 6, hidden: true })
       }, { index: 5, displayMemberPath: 'фио' })
     })
   });

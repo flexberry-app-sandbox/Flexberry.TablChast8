@@ -91,7 +91,7 @@
             {
               "name": "назв",
               "caption": "Назв",
-              "hidden": false,
+              "hidden": true,
               "index": 4
             }
           ],
@@ -112,7 +112,7 @@
             {
               "name": "фио",
               "caption": "Фио",
-              "hidden": false,
+              "hidden": true,
               "index": 6
             }
           ],

@@ -36,7 +36,9 @@ namespace IIS.Tabl_chast8
             "СтатусУч.Назв as \'Назв\'",
             "Родитель as \'Родитель\'",
             "Родитель.Фио as \'Фио\'"}, Hidden=new string[] {
-            "КлассУч.Назв"})]
+            "КлассУч.Назв",
+            "СтатусУч.Назв",
+            "Родитель.Фио"})]
     [MasterViewDefineAttribute("УченикE", "КлассУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Назв")]
     [MasterViewDefineAttribute("УченикE", "СтатусУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Назв")]
     [MasterViewDefineAttribute("УченикE", "Родитель", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио")]
