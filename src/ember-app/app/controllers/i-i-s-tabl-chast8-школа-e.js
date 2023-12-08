@@ -19,6 +19,18 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-tabl-chast8-ученик+статусУч':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'назв',
+            required: true,
+            relationName: 'статусУч',
+            projection: 'СтатусУчL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 

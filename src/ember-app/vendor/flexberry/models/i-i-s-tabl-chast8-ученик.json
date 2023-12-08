@@ -27,6 +27,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "статусУч",
+      "relatedTo": "i-i-s-tabl-chast8-статус-уч",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "школа",
       "relatedTo": "i-i-s-tabl-chast8-школа",
       "inverse": "ученик"
@@ -65,6 +72,27 @@
           "caption": "Класс уч",
           "name": "классУч",
           "relatedTo": "i-i-s-tabl-chast8-класс-уч",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Назв",
+          "lookupValueField": "назв",
+          "relationName": "СтатусУч",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "назв",
+              "caption": "Назв",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Статус уч",
+          "name": "статусУч",
+          "relatedTo": "i-i-s-tabl-chast8-статус-уч",
           "inverse": null
         }
       ],

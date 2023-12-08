@@ -11,6 +11,15 @@ CREATE TABLE [КлассУч] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [СтатусУч] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Назв] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Ученик] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -18,6 +27,8 @@ CREATE TABLE [Ученик] (
 	 [ФИО] VARCHAR(255)  NULL,
 
 	 [КлассУч] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СтатусУч] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [Школа] UNIQUEIDENTIFIER  NOT NULL,
 

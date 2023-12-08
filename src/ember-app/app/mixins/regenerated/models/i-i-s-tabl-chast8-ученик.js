@@ -7,6 +7,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 export let Model = Mixin.create({
   фИО: DS.attr('string'),
   классУч: DS.belongsTo('i-i-s-tabl-chast8-класс-уч', { inverse: null, async: false }),
+  статусУч: DS.belongsTo('i-i-s-tabl-chast8-статус-уч', { inverse: null, async: false }),
   школа: DS.belongsTo('i-i-s-tabl-chast8-школа', { inverse: 'ученик', async: false })
 });
 
@@ -19,6 +20,13 @@ export let ValidationRules = {
   },
   классУч: {
     descriptionKey: 'models.i-i-s-tabl-chast8-ученик.validations.классУч.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
+  статусУч: {
+    descriptionKey: 'models.i-i-s-tabl-chast8-ученик.validations.статусУч.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),
@@ -38,6 +46,9 @@ export let defineProjections = function (modelClass) {
     фИО: attr('ФИО', { index: 0 }),
     классУч: belongsTo('i-i-s-tabl-chast8-класс-уч', 'Класс уч', {
       назв: attr('Назв', { index: 2, hidden: true })
-    }, { index: 1, displayMemberPath: 'назв' })
+    }, { index: 1, displayMemberPath: 'назв' }),
+    статусУч: belongsTo('i-i-s-tabl-chast8-статус-уч', 'Статус уч', {
+      назв: attr('Назв', { index: 4 })
+    }, { index: 3, displayMemberPath: 'назв' })
   });
 };

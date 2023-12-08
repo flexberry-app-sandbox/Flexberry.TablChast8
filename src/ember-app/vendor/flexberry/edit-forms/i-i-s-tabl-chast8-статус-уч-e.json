@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "",
+  "name": "IISTabl_chast8СтатусУчE",
+  "className": "СтатусУчE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-статус-уч",
+      "modelProjection": "СтатусУчE"
+    }
+  ]
+}

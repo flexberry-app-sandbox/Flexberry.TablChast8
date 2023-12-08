@@ -7,6 +7,14 @@
       "relationName": "Ученик.КлассУч",
       "projection": "КлассУчL",
       "detailModelName": "i-i-s-tabl-chast8-ученик"
+    },
+    {
+      "master": "статусУч",
+      "displayAttributeName": "назв",
+      "required": true,
+      "relationName": "Ученик.СтатусУч",
+      "projection": "СтатусУчL",
+      "detailModelName": "i-i-s-tabl-chast8-ученик"
     }
   ],
   "external": false,

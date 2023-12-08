@@ -10,6 +10,7 @@ moduleForModel('i-i-s-tabl-chast8-школа', 'Unit | Serializer | i-i-s-tabl-c
     'transform:guid',
 
     'model:i-i-s-tabl-chast8-класс-уч',
+    'model:i-i-s-tabl-chast8-статус-уч',
     'model:i-i-s-tabl-chast8-ученик',
     'model:i-i-s-tabl-chast8-школа',
     'validator:ds-error',

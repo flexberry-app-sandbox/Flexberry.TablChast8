@@ -31,13 +31,18 @@ namespace IIS.Tabl_chast8
     [View("УченикE", new string[] {
             "ФИО as \'ФИО\'",
             "КлассУч as \'Класс уч\'",
-            "КлассУч.Назв as \'Назв\'"}, Hidden=new string[] {
+            "КлассУч.Назв as \'Назв\'",
+            "СтатусУч as \'Статус уч\'",
+            "СтатусУч.Назв as \'Назв\'"}, Hidden=new string[] {
             "КлассУч.Назв"})]
     [MasterViewDefineAttribute("УченикE", "КлассУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Назв")]
+    [MasterViewDefineAttribute("УченикE", "СтатусУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Назв")]
     public class Ученик : ICSSoft.STORMNET.DataObject
     {
         
         private string fФИО;
+        
+        private IIS.Tabl_chast8.СтатусУч fСтатусУч;
         
         private IIS.Tabl_chast8.КлассУч fКлассУч;
         
@@ -111,6 +116,40 @@ namespace IIS.Tabl_chast8
                 // *** Start programmer edit section *** (Ученик.КлассУч Set end)
 
                 // *** End programmer edit section *** (Ученик.КлассУч Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Ученик.
+        /// </summary>
+        // *** Start programmer edit section *** (Ученик.СтатусУч CustomAttributes)
+
+        // *** End programmer edit section *** (Ученик.СтатусУч CustomAttributes)
+        [PropertyStorage(new string[] {
+                "СтатусУч"})]
+        [NotNull()]
+        public virtual IIS.Tabl_chast8.СтатусУч СтатусУч
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Ученик.СтатусУч Get start)
+
+                // *** End programmer edit section *** (Ученик.СтатусУч Get start)
+                IIS.Tabl_chast8.СтатусУч result = this.fСтатусУч;
+                // *** Start programmer edit section *** (Ученик.СтатусУч Get end)
+
+                // *** End programmer edit section *** (Ученик.СтатусУч Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Ученик.СтатусУч Set start)
+
+                // *** End programmer edit section *** (Ученик.СтатусУч Set start)
+                this.fСтатусУч = value;
+                // *** Start programmer edit section *** (Ученик.СтатусУч Set end)
+
+                // *** End programmer edit section *** (Ученик.СтатусУч Set end)
             }
         }
         

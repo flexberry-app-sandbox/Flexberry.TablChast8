@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISTabl_chast8СтатусУч",
+  "modelName": "i-i-s-tabl-chast8-статус-уч",
+  "className": "СтатусУч",
+  "nameSpace": "IIS.Tabl_chast8",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "назв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СтатусУчE",
+      "modelName": "i-i-s-tabl-chast8-статус-уч",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Назв",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СтатусУчL",
+      "modelName": "i-i-s-tabl-chast8-статус-уч",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Назв",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

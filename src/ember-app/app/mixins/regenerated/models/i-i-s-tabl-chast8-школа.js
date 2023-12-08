@@ -32,7 +32,10 @@ export let defineProjections = function (modelClass) {
       фИО: attr('ФИО', { index: 0 }),
       классУч: belongsTo('i-i-s-tabl-chast8-класс-уч', 'Класс уч', {
         назв: attr('Назв', { index: 2, hidden: true })
-      }, { index: 1, displayMemberPath: 'назв' })
+      }, { index: 1, displayMemberPath: 'назв' }),
+      статусУч: belongsTo('i-i-s-tabl-chast8-статус-уч', 'Статус уч', {
+        назв: attr('Назв', { index: 4 })
+      }, { index: 3, displayMemberPath: 'назв' })
     })
   });
 

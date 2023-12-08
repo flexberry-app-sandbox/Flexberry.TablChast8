@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-tabl-chast8-класс-уч', 'Unit | Model | i-i-s-tabl-chast8-класс-уч', {
+moduleForModel('i-i-s-tabl-chast8-статус-уч', 'Unit | Model | i-i-s-tabl-chast8-статус-уч', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-tabl-chast8-класс-уч',

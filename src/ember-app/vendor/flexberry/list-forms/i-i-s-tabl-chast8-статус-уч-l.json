@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-tabl-chast8-статус-уч-e",
+  "editForm": "i-i-s-tabl-chast8-статус-уч-e",
+  "external": false,
+  "caption": "",
+  "name": "IISTabl_chast8СтатусУчL",
+  "className": "СтатусУчL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-tabl-chast8-статус-уч",
+      "modelProjection": "СтатусУчL"
+    }
+  ]
+}
